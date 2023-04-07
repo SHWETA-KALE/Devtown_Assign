@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(16, 16, 32);
+    box-sizing: border-box;
+}
+
+body{
+ font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: white;
+    color: black;
+    font-weight:bolder;
+    text-align: center;
+    padding: 10px;
+    font-size: 45px;
+}
+div.container div.score-board{
+    color: white;
+    /* background-color: red; */
+    border: 3px solid #fff;
+    width: 250px;
+    margin: 40px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background: #e2584d;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+
+#user{
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    transform: translate(10%, -50%);
+    
+  }
+
+#comp{
+    position: absolute;
+    top: 50%;
+    right: -9%;
+    transform: translate(10%, -50%);
+}  
+
+.result{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.result span{
+    color: #e2584d;
+}
+
+
+.images{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    
+    
+}
+
+.images img{
+    margin: 0 10px;
+    width: 60%; 
+}
+
+ .rock{
+    margin-left: 50px;
+    width: 15%;
+   
+}
+
+ .paper{
+    /* margin-left: ; */
+    width: 15%;
+
+}
+
+.scissor{
+    width: 15%;
+    
+}
+
+.instruct{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
