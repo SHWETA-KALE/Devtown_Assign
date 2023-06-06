@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+div.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 35px;
+
+}
+
+div.options .option {
+    width: 100px;
+    background-color: rgb(236, 180, 180);
+    margin: 0px 30px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.5s ease-in-out;
+}
+
+div.options .option#scissor {
+    transform: rotate(-90deg) rotateY(180deg);
+}
+
+div.options .option:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+div.options .option img {
+    width: 100%;
+}
+
+div.scoreboard {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(252, 6, 6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-top: 50px 0px; */
+    margin: 30px auto;
+    background: hsla(235, 100%, 78%, 1);
+
+    background: linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 77%, 33%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#919BFF", endColorstr="#133A94", GradientType=1);
+
+}
+
+#player, #computer {
+    position: relative;
+}
+
+#player div {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    /* opacity: 0.8; */
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    left: -120px;
+    top: 10px;
+    padding: 0px 10px;
+}
+
+#computer div {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    /* opacity: 0.8; */
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    right: -120px;
+    top: 10px;
+    padding: 0px 10px;
+}
+
+
+#player h1 {
+    color: white;
+    font-size: 40px;
+}
+
+#computer h1 {
+    color: white;
+    font-size: 40px;
+}
+
+div.parition {
+    width: 5px;
+    height: 100%;
+    background-color: white;
+}
+
+#player div {
+    color: white;
+}
+
+#computer div {
+    color: white;
+}
+
+.win {
+    border: 5px solid lime !important;
+}
+
+.lose {
+    border: 5px solid crimson !important;
+}
