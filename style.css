@@ -1,38 +1,39 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    
+
+body {
+
     /* background: hsla(210, 90%, 80%, 1);
     background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(210, 93%, 49%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1 ); */
 
     background: hsla(236, 100%, 8%, 1);
 
-background: radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    background: radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
 
-background: -moz-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
 
-background: -webkit-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000328", endColorstr="#00458E", GradientType=1);
 
-/* 
+    /* 
  background: hsla(210, 90%, 80%, 1);
  background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
  height: 100vh;
  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1); */
 
- display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
 }
 
-div.container{
+div.container {
     width: 432px;
     height: 535px;
     background-color: #fff;
@@ -42,11 +43,11 @@ div.container{
     font-family: 'Roboto', sans-serif;
 }
 
-div.container header{
+div.container header {
     text-align: center;
 }
 
-img.logo{
+img.logo {
     width: 48px;
     /* height: 3rem; */
     /* display: flex;
@@ -54,21 +55,21 @@ img.logo{
 
 }
 
-div.container h2.title{
+div.container h2.title {
     font-size: 35px;
     font-weight: 700;
     color: black;
     margin-top: 24px;
 }
 
-div.container h2{
+div.container h2 {
     margin-top: 24px;
     font-weight: 700px;
     font-size: 35px;
     color: black;
 }
 
-div.container h2.title span{
+div.container h2.title span {
     color: #6422CD;
 
 }
@@ -81,14 +82,14 @@ div.container h2.title span{
 
 } */
 
-div.container div.login-msg{
+div.container div.login-msg {
     font-size: 34;
-    font-weight:4700 ;
-    color:black ;
-   margin-top: 24px;
+    font-weight: 4700;
+    color: black;
+    margin-top: 24px;
 }
 
-div.container form{
+div.container form {
     margin-top: 25px;
     height: 126px;
     display: flex;
@@ -96,14 +97,15 @@ div.container form{
     justify-content: space-around;
 }
 
-div.container form input{
+div.container form input {
     outline: none;
     padding: 8px 12px;
     height: 32px;
     border-radius: 5px;
     font-size: 15px;
-    border: 1px solid rgb(209 213 219);  /*shorthand of width, style nd color*/
-    justify-content:space-between;
+    border: 1px solid rgb(209 213 219);
+    /*shorthand of width, style nd color*/
+    justify-content: space-between;
 
 
     /* border-width: 1px;
@@ -112,11 +114,17 @@ div.container form input{
 
 }
 
-div.pass{
+/* style between mail and msg is not getting applied  */
+div .mail {
+    margin-top: 25px ;
+    justify-content: space-around;
+}
+
+div.pass {
     margin-top: 20px;
 }
 
-div.container form input:focus{
+div.container form input:focus {
     border-color: #6422CD;
 }
 
@@ -125,43 +133,44 @@ div.container form div.pass {
     align-items: center;
 }
 
-div.container form div.pass input{
-   flex-grow: 1;
-   
- 
+div.container form div.pass input {
+    flex-grow: 1;
+
+
 }
 
-div.container form div.pass input svg{
-    margin-left:  10px;
-   
+div.container form div.pass input svg {
+    margin-left: 10px;
+
 }
 
- div.container form div.para p{
+div.container form div.para p {
     margin: 20px;
     text-align: right;
     font-weight: 100;
-    columns:#6422CD ;
+    columns: #6422CD;
     text-decoration-line: underline;
-} 
+}
 
-div.container form div.para p:hover{
+div.container form div.para p:hover {
     cursor: pointer;
 }
-button{
-    
+
+button {
+
     background-color: #6422CD;
     width: 100%;
     border-radius: 2px;
-    color:white;
+    color: white;
     cursor: pointer;
     padding: 7px 20px;
     border-radius: 5px;
     /* background: transparent; */
-    
+
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 
-div.button:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+div.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
